@@ -1,6 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-
+vim.opt.clipboard = ""
 require("lspconfig").basedpyright.setup({
   name = "basedpyright",
   cmd = { "basedpyright-langserver", "--stdio" },
